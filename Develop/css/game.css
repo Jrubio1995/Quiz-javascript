@@ -1,0 +1,63 @@
+body {
+  color: white;
+}
+
+#timer {
+  font-size: 2.5rem;
+  background: blue;
+  align-items: center;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: blue;
+  min-width: 80rem;
+  font-size: 3rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.02);
+  transform: transfrorm 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+
+.correct {
+  background: linear-gradient(32deg, green 0%, green 100%);
+}
+.incorrect {
+  background: linear-gradient(32deg, red 0%, red 100%);
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hub-prefix {
+  text-align: end;
+  font-size: 2rem;
+}
+
+.hub-main-text {
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
